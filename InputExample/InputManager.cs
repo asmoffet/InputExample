@@ -51,13 +51,25 @@ namespace InputExample
             #region Keyboard input
             //get position from keyboard
             if (currentKeyboadState.IsKeyDown(Keys.Left) || currentKeyboadState.IsKeyDown(Keys.A))
+            {
                 Direction += new Vector2(-100 * (float)gameTime.ElapsedGameTime.TotalSeconds, 0);
+            }
+                
             if (currentKeyboadState.IsKeyDown(Keys.Right) || currentKeyboadState.IsKeyDown(Keys.D))
+            {
                 Direction += new Vector2(100 * (float)gameTime.ElapsedGameTime.TotalSeconds, 0);
+            }
+                
             if (currentKeyboadState.IsKeyDown(Keys.Up) || currentKeyboadState.IsKeyDown(Keys.W))
+            {
                 Direction += new Vector2(0, -100 * (float)gameTime.ElapsedGameTime.TotalSeconds);
+            }
+                
             if (currentKeyboadState.IsKeyDown(Keys.Down) || currentKeyboadState.IsKeyDown(Keys.S))
+            {
                 Direction += new Vector2(0, 100 * (float)gameTime.ElapsedGameTime.TotalSeconds);
+            }
+                
             #endregion
 
             #region GamePad input
